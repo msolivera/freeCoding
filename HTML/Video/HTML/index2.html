@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WEB</title>
+    <style> table, th, td {border: 1px solid black;}</style>
+</head>
+<body>
+
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mesa</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>Silla</td>
+                <td>105</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: 1105$</td>
+
+        </tfoot>
+    </table>
+
+    <!--Lista no ordenada-->
+    <ul>
+        <li>ELEMENTO 1</li>
+        <li>ELEMENTO 2</li>
+        <li>ELEMENTO 4</li>
+    </ul>
+
+     <!--Lista ordenada-->
+     <Ol>
+        <li>ELEMENTO 1</li>
+        <li>ELEMENTO 2</li>
+        <li>ELEMENTO 4</li>
+    </Ol>
+
+    <Ol >
+        <li value="50">ELEMENTO 1</li>
+        <li>ELEMENTO 2</li>
+        <li>ELEMENTO 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">SUB ELEMENTO 1</li>
+                <li style="list-style-type: lower-alpha;">SUB ELEMENTO 2</li>
+                <li style="list-style-type: lower-alpha;">SUB ELEMENTO 3</li>
+                <li style="list-style-type: lower-alpha;">SUB ELEMENTO 4</li>
+            </ol>
+        </li>
+    </Ol>
+
+    <H1>Heading h1</H1> 
+    <H2>Heading h2</H2>
+
+    <p>primer parrafo</p>
+    <hr>
+    <h2> un subtitulo</h2>
+    <p>segundo parrafo</p>
+    <!-- esto es un comentario-->
+    <p>texto mucho mas largo<br><br> <span style="color:blueviolet"> etiqueta spam es para agrupar e identificar un texto</span></p>
+    <a target="_blank" href="https://www.google.com.uy/">Ir a google</a><br>
+    <img src="img/fondo.jpg" width="400" />
+    <form action="/formulario" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresar nmombre"/>
+        <br><br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingresar nmombre"/>
+        <br><br>
+        <label for="comentario">Comentarios</label>
+        <textarea cols="50" rows="10" id="comentario" placeholder="Ingresar comentarios"></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="button">Tipo boton</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
+

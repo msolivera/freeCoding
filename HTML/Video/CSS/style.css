@@ -1,0 +1,191 @@
+/*aplico estilo solo al elemento que tiene como id titulo*/
+#titulo {
+  color: tomato;
+}
+
+/*aplico estilo solo a las etiquetas p que tienen como clase la palabla texto*/
+p.texto {
+  color: slateblue;
+}
+
+/*dependiendo del orden que escribamos el css, este
+ se va a anteponer a lo que tenemos escrito anteriormente*/
+p.especial {
+  color: mediumaquamarine;
+}
+
+/*en todos los div que tengan hijos con etiquetas de p
+quiero que tengan el proximo estilo*/
+div p {
+  color: mediumvioletred;
+}
+
+div h2,
+div h3 {
+  color: brown;
+}
+
+/*esto afecta a toodo el html afecta a las
+propiedades que no hayan sido definidas por ejemplo
+el color no lo cambia porque esta definido en otras
+etiquetas*/
+* {
+  font-size: 24px;
+  /* color: black; */
+}
+
+/*
+.color {
+  color: #ff0000;
+}
+
+*/
+.color {
+  /* border: 5px red outset; */
+  /*los estilos de bordes pueden ser: 
+  solid, dotted, dashed, double, groove
+  ridge, inset, outset, none, hidden*/
+  color: rgb(255, 100, 124);
+  border-style: outset;
+  border-color: red;
+  border-radius: 5px;
+  border-width: 5px;
+}
+
+#fondo {
+  /* background-color: salmon; */
+  color: white;
+  background-color: rgba(255, 0, 0);
+  background-image: url("2.png");
+  height: 300px;
+  /* background-size: cover; */
+  /* background-size: 800px 300px;
+  background-repeat: no-repeat; */
+  background-size: 200px 100px;
+  background-repeat: repeat-y;
+  background-position: center top;
+}
+
+.margen {
+  background-color: pink;
+  /*margin es espacion al rededor del elemento*/
+  margin: 15px;
+  /*padding son espacion dentro del elemento**/
+  padding: 30px 15px;
+  /*un borde*/
+  border: solid 1px black;
+  /*alto*/
+  height: 100px;
+  /*ancho*/
+  width: 50px;
+  /*que pasa con lo que se sale del elemento*/
+  overflow: scroll;
+  /*linea que esta por arriba del border*/
+  outline: 1px solid red;
+}
+
+.text {
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 3px 5px 5px /*difuminado*/ palevioletred;
+  font-family: "Corinthia", cursive;
+}
+
+/*cuando no ha sido visitado*/
+a:link {
+  color: blueviolet;
+}
+/*cuando ya fue visitado*/
+a:visited {
+  color: gray;
+}
+/*cuando paso el mouse por arriba*/
+a:hover {
+  color: green;
+}
+/*cuando pincho el link*/
+a:active {
+  color: red;
+}
+
+ul {
+  background-color: cyan;
+  list-style: circle;
+  /* padding-left: 0px; */
+  /* list-style-position: inside; */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: solid 1px grey;
+  padding: 5px;
+}
+th {
+  background-color: tomato;
+  color: white;
+  text-align: left;
+}
+
+/*pares*/
+tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+tr:hover {
+  background-color: wheat;
+  cursor: pointer;
+}
+
+span {
+  /*esto le pone un salto de pagina*/
+  display: block;
+  /*oculta los elementos desaparecen de pantalla*/
+  /* display: none; */
+  /*deja invisible el elemento pero no lo desaparece*/
+  /* visibility: hidden; */
+  max-width: 300px;
+  background-color: red;
+}
+
+.inline {
+  /*los elementos  no empiezan en una nueva linea */
+  display: inline;
+}
+
+#position {
+  position: sticky;
+  left: 20px;
+  top: 25px;
+}
+
+.container {
+  height: 200px;
+}
+
+.left {
+  float: left;
+  width: 200px;
+  height: 100px;
+}
+
+.right {
+  float: right;
+}
+
+.card {
+  margin: 0;
+  padding: 10px o;
+  width: 33.3%;
+}
+
+.center {
+  padding: 20px 0px;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+  background-color: khaki;
+}
